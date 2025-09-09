@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartBus Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Maps API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyidZVEFk5OU5DAf4EK5Vq5WflS0Wo31M"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>🚌 SmartBus Tracker</h1>
+  </header>
+
+  <main>
+    <section class="search-box">
+      <input type="text" id="source" placeholder="Enter Source">
+      <br>
+      <input type="text" id="destination" placeholder="Enter Destination">
+      <button onclick="findBuses()">Find Buses</button>
+    </section>
+
+    <section class="bus-search">
+      <input type="text" id="busNumber" placeholder="Enter Bus Number">
+      <button onclick="trackBus()">Track Bus</button>
+    </section>
+
+    <section id="map"></section>
+  </main>
+
+  <button id="panicBtn" onclick="triggerPanic()">🚨 Panic</button>
+</body>
+</html>

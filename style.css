@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+}
+
+header {
+  background: #007bff;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.search-box, .bus-search {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 1rem;
+}
+
+input, button {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+#map {
+  height: 70vh;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+#panicBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
