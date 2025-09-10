@@ -7,7 +7,15 @@
   <link rel="stylesheet" href="style.css">
   <!-- Google Maps API -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyidZVEFk5OU5DAf4EK5Vq5WflS0Wo31M"></script>
+   <!-- <script async 
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyidZVEFk5OU5DAf4EK5Vq5WflS0Wo31M&callback=initMap"> -->
+</script>
+
   <script src="app.js" defer></script>
+
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+
 </head>
 <body>
   <header>
@@ -28,6 +36,23 @@
     </section>
 
     <section id="map"></section>
+
+   
+<!-- <section class="ticket-section">
+  <h2>🎟️ Book Your Ticket</h2>
+  <form id="ticketForm">
+    <label for="bus">Select Bus:</label>
+    <select id="bus" required></select>
+
+    <input type="text" id="source" placeholder="Enter Source" required>
+    <input type="text" id="destination" placeholder="Enter Destination" required>
+    <input type="number" id="tickets" placeholder="Number of Tickets" min="1" required>
+
+    <button type="submit">Book Ticket</button>
+  </form>
+
+  <div id="bookingStatus"></div>
+</section> -->
   </main>
 
   <button id="panicBtn" onclick="triggerPanic()">🚨 Panic</button>

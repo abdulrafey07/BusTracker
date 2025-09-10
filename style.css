@@ -134,6 +134,33 @@ header {
   z-index: 1000;
 }
 
+.ticket-section {
+  margin: 1rem auto;
+  max-width: 400px;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.ticket-section h2 {
+  text-align: center;
+  color: #007bff;
+}
+
+.ticket-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#bookingStatus {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
 /* Responsive typography and layout adjustments */
 @media (max-width: 600px) {
   header {
